@@ -9,14 +9,17 @@ import { Geolocation } from '@ionic-native/geolocation/ngx';
 })
 export class MapPage implements OnInit {
 
+  //Variables
   long:number;
   lat:number;
 
+  //Constructor for geolocation
   constructor(private geolocation: Geolocation) { }
 
   ngOnInit() {
   }
 
+  //Locationg for printing of long/latitude
   locationPrint(){
     this.geolocation.getCurrentPosition().then((resp) => {
       this.lat = resp.coords.latitude

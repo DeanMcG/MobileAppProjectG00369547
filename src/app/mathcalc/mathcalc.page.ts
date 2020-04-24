@@ -11,6 +11,7 @@ export class MathcalcPage implements OnInit {
 
   ngOnInit() {
   }
+  //Variables
   display = '0';
   firstval: number = null;
   operator: any = null;
@@ -18,7 +19,9 @@ export class MathcalcPage implements OnInit {
   isc = false;
   iscomma = false;
 
+  //Click event for all buttons on calculator
   click(val: any) {
+    //Switch statement to handle which button has been pressed
     switch (val) {
       case 'ac':
         this.display = '0';
@@ -98,6 +101,7 @@ export class MathcalcPage implements OnInit {
     }
   }
 
+  //Method to know whether or not to add a comma
   addcomma() {
     if (this.iscomma === false) {
       this.iscomma = true;
@@ -106,6 +110,7 @@ export class MathcalcPage implements OnInit {
     }
   }
 
+  //Method to handle if number in calc is 0 or not and if its not it will take in the number
   addnumber(nbr: string) {
     if (nbr === '0') {
       if (this.newcursor === true) {
@@ -151,12 +156,14 @@ export class MathcalcPage implements OnInit {
     this.isc = true;
   }
 
+  //Method for percentages
   addpercent() {
     this.iscomma = false;
     const dispval = parseInt(this.display, 0) / 100;
     this.display = dispval.toString();
   }
 
+  
   addoperator(op: string) {
     if (this.newcursor === false) {
       if (this.firstval === null) {
@@ -174,6 +181,7 @@ export class MathcalcPage implements OnInit {
     this.operator = op;
     this.newcursor = true;
   }
+  //Method for handling the math of each operator eg. +, x, -
   calclast() {
     switch (this.operator) {
       case ':':

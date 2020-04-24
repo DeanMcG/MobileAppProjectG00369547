@@ -8,11 +8,12 @@ import { Flashlight } from '@ionic-native/flashlight/ngx';
 })
 export class FlashlightPage implements OnInit {
 
+  //Constructor for flashlight
   constructor(private flashlight:Flashlight) { }
 
   ngOnInit() {
   }
-
+  //Method for toggle of flashlight
   lightMethod(){
     this.flashlight.toggle();
   }

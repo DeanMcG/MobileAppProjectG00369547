@@ -1,16 +1,20 @@
 <ion-header>
   <ion-toolbar>
+    <!--Title-->
     <ion-title>Calculator</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <!--Div for design purposes-->
   <div class="calc-main">
     <div class="calc-display">
+      <!--Number at top of calculator-->
       <ion-input type="number" [(ngModel)]="display" class="ion-text-end"></ion-input>
     </div>
     <ion-grid>
       <ion-row>
+        <!--All buttons present on calculator-->
         <ion-col>
           <ion-button shape="round" color="light" *ngIf="!isc" (click)="click('ac')">AC</ion-button>
           <ion-button shape="round" color="light" *ngIf="isc" (click)="click('c')">C</ion-button>

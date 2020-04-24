@@ -1,19 +1,24 @@
 <ion-header>
   <ion-toolbar>
+    <!--Title-->
     <ion-title>Co-Ordinates</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <!--Div for design purposes-->
   <div class="mapPage">
 <ion-grid>
+  <!--Button for method to give coordinates-->
   <ion-row>
     <ion-col style="text-align: center;">
   <ion-button expand="block" (click)="locationPrint()" class="mapButton">Get Co-Ordinates</ion-button>
     </ion-col>
   </ion-row>
 <br>
+<!--Div for colouring-->
 <div class="field"><ion-row>
+  <!--Placement of latitude print-->
   <ion-col style="text-align: center;">
    <div class="text">Your Latitude Is: <br>  
    <br> {{lat}}</div>
@@ -21,6 +26,7 @@
 </ion-row>
 
 <ion-row>
+  <!--Placement of longitude print-->
   <ion-col style="text-align: center;">
     <div class="text">Your Logitude Is: <br>
     <br>{{long}}</div>
