@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'mathcalc',
     loadChildren: () => import('./mathcalc/mathcalc.module').then( m => m.MathcalcPageModule)
   },
+  {
+    path: 'map',
+    loadChildren: () => import('./map/map.module').then( m => m.MapPageModule)
+  },
 ];
 
 @NgModule({
