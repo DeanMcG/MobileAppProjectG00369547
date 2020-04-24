@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'calculator',
+    loadChildren: () => import('./calculator/calculator.module').then( m => m.CalculatorPageModule)
+  },
+  {
+    path: 'flashlight',
+    loadChildren: () => import('./flashlight/flashlight.module').then( m => m.FlashlightPageModule)
+  },
 ];
 
 @NgModule({
