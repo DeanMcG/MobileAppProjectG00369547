@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'flashlight',
     loadChildren: () => import('./flashlight/flashlight.module').then( m => m.FlashlightPageModule)
   },
+  {
+    path: 'location',
+    loadChildren: () => import('./location/location.module').then( m => m.LocationPageModule)
+  },
 ];
 
 @NgModule({
