@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Flashlight } from '@ionic-native/flashlight/ngx';
 
 @Component({
   selector: 'app-flashlight',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FlashlightPage implements OnInit {
 
-  constructor() { }
+  constructor(private flashlight:Flashlight) { }
 
   ngOnInit() {
+  }
+
+  lightMethod(){
+    this.flashlight.toggle();
   }
 
 }
