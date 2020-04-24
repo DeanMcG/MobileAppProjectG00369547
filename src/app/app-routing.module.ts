@@ -20,8 +20,8 @@ const routes: Routes = [
     loadChildren: () => import('./flashlight/flashlight.module').then( m => m.FlashlightPageModule)
   },
   {
-    path: 'location',
-    loadChildren: () => import('./location/location.module').then( m => m.LocationPageModule)
+    path: 'mathcalc',
+    loadChildren: () => import('./mathcalc/mathcalc.module').then( m => m.MathcalcPageModule)
   },
 ];
 

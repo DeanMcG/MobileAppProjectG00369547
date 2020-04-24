@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { LocationPageRoutingModule } from './location-routing.module';
+import { MathcalcPageRoutingModule } from './mathcalc-routing.module';
 
-import { LocationPage } from './location.page';
+import { MathcalcPage } from './mathcalc.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    LocationPageRoutingModule
+    MathcalcPageRoutingModule
   ],
-  declarations: [LocationPage]
+  declarations: [MathcalcPage]
 })
-export class LocationPageModule {}
+export class MathcalcPageModule {}

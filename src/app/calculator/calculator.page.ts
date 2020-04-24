@@ -56,10 +56,10 @@ export class CalculatorPage implements OnInit {
         this.value = '' + parseInt(this.oldValue) * parseInt(this.value);
       }
       else if (this.lastOperator === '-'){
-        this.value =   parseInt(this.oldValue) - parseInt(this.value);
+        //this.value =  parseInt(this.oldValue) - parseInt(this.value);
       }
       else if (this.lastOperator === '+'){
-        this.value = parseInt(this.oldValue) + parseInt(this.value);
+        this.value = '' + parseInt(this.oldValue) + parseInt(this.value);
       }
       else if (this.lastOperator === '/'){
         this.value = '' + parseInt(this.oldValue) / parseInt(this.value);
