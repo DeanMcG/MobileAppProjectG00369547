@@ -3,5 +3,12 @@
 }
 
 .button{
-    width: 144px;
+    width: 256px;
+    height: 256px;
+    --background: rgb(226, 154, 21);
+}
+
+.everything{
+    background-color: rgb(135, 241, 64);
+    height: 100%;
 }

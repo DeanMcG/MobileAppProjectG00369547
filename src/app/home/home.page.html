@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
       All-In-1
@@ -6,31 +6,35 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">All-In-1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <br>
+<ion-content>
+  <div class="everything">
 <ion-grid>
-  <ion-row >
-
+  <ion-row class="divider">
   </ion-row>
   
   <ion-row>
   <ion-col style="text-align: center;">
-    <ion-button expand="block" href="/mathcalc" class="button">Calculator</ion-button>
+    <ion-button expand="block" href="/mathcalc" class="buttonCalc">Calculator</ion-button>
   </ion-col>
+  </ion-row>
+ 
+  <ion-row class="divider">
   </ion-row>
 
   <ion-row>
     <ion-col style="text-align: center;">
-      <ion-button expand="block" href="/flashlight" class="button">Flashlight</ion-button>
+      <ion-button expand="block" href="/flashlight" class="buttonFlash">Flashlight</ion-button>
     </ion-col>
     </ion-row>
+    
+    <ion-row class="divider">
+    </ion-row>
+    
+    <ion-row>
+      <ion-col style="text-align: center;">
+        <ion-button expand="block" href="/map" class="buttonCo">Co-ordinates Checker</ion-button>
+      </ion-col>
+      </ion-row>
 </ion-grid>
-
-
+</div>
 </ion-content>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Geolocation } from '@ionic-native/geolocation/ngx';
+
 
 @Component({
   selector: 'app-map',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MapPage implements OnInit {
 
-  constructor() { }
+  long:number;
+  lat:number;
+
+  constructor(private geolocation: Geolocation) { }
 
   ngOnInit() {
+  }
+
+  locationPrint(){
+    this.geolocation.getCurrentPosition().then((resp) => {
+      this.lat = resp.coords.latitude
+      this.long = resp.coords.longitude
+     }).catch((error) => {
+       console.log('Error getting location', error);
+     });
   }
 
 }

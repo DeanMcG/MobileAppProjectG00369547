@@ -1,9 +1,32 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>map</ion-title>
+    <ion-title>Co-Ordinates</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <div class="mapPage">
+<ion-grid>
+  <ion-row>
+    <ion-col style="text-align: center;">
+  <ion-button expand="block" (click)="locationPrint()" class="mapButton">Get Co-Ordinates</ion-button>
+    </ion-col>
+  </ion-row>
+<br>
+<div class="field"><ion-row>
+  <ion-col style="text-align: center;">
+   <div class="text">Your Latitude Is: <br>  
+   <br> {{lat}}</div>
+</ion-col>
+</ion-row>
 
+<ion-row>
+  <ion-col style="text-align: center;">
+    <div class="text">Your Logitude Is: <br>
+    <br>{{long}}</div>
+</ion-col>
+</ion-row></div>
+
+</ion-grid>
+</div>
 </ion-content>
